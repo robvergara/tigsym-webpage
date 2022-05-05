@@ -1,0 +1,470 @@
+@charset "UTF-8";
+:root {
+  --orange: #ff761a;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+/*TAMAÑO DE LOS CONTAINERS*/
+/*CONTAINERS CON CONTENIDO HACIA LOS LADOS*/
+/**/
+/*FIT DEL CONTENIDO ESCRITO */
+/*FIT DEL CONTENIDO DE IMAGENES*/
+/*CONTAINER CON CONTENIDO EN EL CENTRO*/
+/**/
+/*TAMAÑO CONTAINERS MOBILE*/
+/*FIT DEL CONTENIDO MOBILE CON IMAGENES*/
+/*FIT CONTENIDO CENTRAL SIN IMAGENES*/
+/*HEADER DE LA PAGINA*/
+.header-container {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  -webkit-box-shadow: 1px 10px 3px -8px rgba(131, 131, 131, 0.3);
+          box-shadow: 1px 10px 3px -8px rgba(131, 131, 131, 0.3);
+  z-index: 1;
+}
+
+.logoHeader_TIG {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logoHeader_TIG img {
+  width: 200px;
+  height: 80px;
+  margin: auto 15px;
+}
+
+.navigation-header {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation-header__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navigation-header__item {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.navigation-header__item:hover {
+  cursor: pointer;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+.main-container {
+  display: inline-block;
+}
+
+/*CONTENEDOR HOME DE LA PAGINA*/
+.main-content {
+  color: whitesmoke;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 163, 102, 0.3)), to(rgba(255, 163, 102, 0.3))), url("../img/contactenos-img.jpeg");
+  background-image: linear-gradient(rgba(255, 163, 102, 0.3), rgba(255, 163, 102, 0.3)), url("../img/contactenos-img.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.main-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  font-size: 5rem;
+}
+
+.main-description {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  font-weight: 100;
+  width: 60%;
+}
+
+.viewMore-button {
+  background-color: var(--orange);
+  border-radius: 28px;
+  border: 1px solid --orange;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1.8rem;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px --orange;
+}
+
+.viewMore-button:hover {
+  opacity: 0.8;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+/*CONTENEDOR DE PRESENTACION BREVE*/
+.presentation-container {
+  padding: 0 50px;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-bottom: 3px solid #e7e4e4;
+}
+
+.presentation-container p {
+  font-weight: 200;
+}
+
+/*CONTENEDOR DE LOS SERVICIOS*/
+.services-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 3px solid #e7e4e4;
+}
+.services-container .services-title {
+  padding-top: 50px;
+  margin-bottom: 15px;
+  font-size: 4.8rem;
+  text-align: center;
+}
+.services-container .services-content {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.services-container .services {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.services-container .services span {
+  width: 250px;
+  height: 200px;
+  margin: auto;
+}
+.services-container .services img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+.services-container .services h3 {
+  margin: 20px auto 0px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.services-button {
+  display: inline-block;
+  text-align: center;
+  margin: 50px auto;
+  padding: 8px 15px;
+  background-color: var(--orange);
+  color: whitesmoke;
+  border-radius: 28px;
+  font-size: 1.8rem;
+}
+
+.services-button:hover {
+  opacity: 0.7;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+/*PIE DE PAGINA*/
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  background-color: var(--orange);
+}
+
+.footer-left {
+  height: 90%;
+}
+.footer-left .footer-left-item {
+  margin: 5px auto;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.footer-right {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer-right .footer-right-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-right .footer-right-title {
+  margin: auto;
+  font-size: 1.4rem;
+}
+.footer-right .footer-right-item {
+  margin: auto;
+}
+
+input {
+  font-size: 1.8rem;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+::-webkit-input-placeholder {
+  color: #726659;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 470px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  color: #b3aca7;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+.contact-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #e2dedb;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+}
+
+.left-content {
+  width: 470px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15px;
+}
+
+.sidePhoto-img {
+  width: 50%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sidePhoto-img img {
+  width: 420px;
+  height: 340px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.2);
+}

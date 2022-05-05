@@ -1,0 +1,43 @@
+/*CONTENEDOR DE LA MISION*/
+.mision-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+  @include borderContainerBottom;
+}
+.left-content {
+  @include centerContainerMb;
+  padding-left: 15px;
+}
+.left-content h2 {
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.sidePhoto-img {
+  padding-bottom: 20px;
+  @include mobileSectionPhoto;
+}
+/*CONTENEDOR DE LA VISION*/
+.vision-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+}
+.right-content {
+  @include centerContainerMb;
+  padding-right: 15px;
+}
+.right-content h2 {
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.sidePhoto-img {
+  padding-bottom: 20px;
+  @include mobileSectionPhoto;
+}

@@ -1,0 +1,162 @@
+/*CONTENEDOR PRINCIPAL*/
+.main-container {
+  display: inline-block;
+}
+/*CONTENEDOR HOME DE LA PAGINA*/
+.main-content {
+  color: whitesmoke;
+  background-image: linear-gradient(
+      rgb(255, 163, 102, 0.3),
+      rgb(255, 163, 102, 0.3)
+    ),
+    url("../img/contactenos-img.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include containerBoxMb;
+  @include centerContainerMb;
+}
+.main-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  font-size: 5rem;
+}
+.main-description {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  font-weight: 100;
+  width: 60%;
+}
+.viewMore-button {
+  background-color: var(--orange);
+  border-radius: 28px;
+  border: 1px solid --orange;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1.8rem;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px --orange;
+}
+.viewMore-button:hover {
+  opacity: 0.8;
+  transition-duration: 0.3s;
+}
+
+/*CONTENEDOR DE PRESENTACION BREVE*/
+.presentation-container {
+  padding: 0 50px;
+  @include containerBoxMb;
+  @include borderContainerBottom;
+}
+.presentation-container p {
+  font-weight: 200;
+}
+
+/*CONTENEDOR DE LOS SERVICIOS*/
+.services-container {
+  .services-title {
+    padding-top: 50px;
+    margin-bottom: 15px;
+    font-size: 4.8rem;
+    text-align: center;
+  }
+  .services-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .services {
+    width: 325px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px 30px;
+  }
+  .services span {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+  }
+  .services img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.2);
+  }
+  .services h3 {
+    margin: 20px auto 0px;
+    text-align: center;
+    font-weight: 500;
+  }
+  @include centerContainerMb;
+  @include borderContainerBottom;
+}
+
+.services-button {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 8px 15px;
+  background-color: var(--orange);
+  color: whitesmoke;
+  border-radius: 28px;
+  font-size: 1.8rem;
+}
+.services-button:hover {
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+/*CONTENEDOR DE LA MISION*/
+.mision-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+  @include borderContainerBottom;
+}
+.left-content {
+  @include centerContainerMb;
+  padding-left: 15px;
+}
+.left-content h2 {
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.mision-img {
+  padding-bottom: 20px;
+  @include mobileSectionPhoto;
+}
+
+/*CONTENEDOR DE LA VISION*/
+.vision-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+}
+.right-content {
+  @include centerContainerMb;
+  padding-right: 15px;
+}
+.right-content h2 {
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.vision-img {
+  padding-bottom: 20px;
+  @include mobileSectionPhoto;
+}

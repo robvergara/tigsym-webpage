@@ -1,0 +1,15 @@
+extend components/headerQuienesSomos.pug
+block mainContent
+
+        main.main-container
+            section.main-content 
+                h1.main-title TIG SOLDADURAS Y MONTAJES S.A.S 
+                p.main-description Somos una empresa constituida en el año 2017 en la ciudad de Barranquilla, Colombia, especializada en la construccion, montaje, mantenimiento y soldadura en la industria de procesos. Con un recorrido por empresas conocidas a nivel regional y nacional.
+
+            section.mision-container
+                +left-container('Misión','Nuestra misión es proveer a nuestros clientes soluciones para sus necesidades en instalaciones de tuberias para maquinarias de procesos industriales, carpinteria metálica y soldaduras, con mano de obra especializada, calidad y puntialidad en las fechas de entregas de proyectos', 'servicio1.jpg')
+  
+            section.vision-container 
+                +right-container('Visión','Para el año 2027 seremos una empresa referente en a ciudad de Baranquilla en los servicios especializados de soldadura para la industria de procesos de alimentos y farmaceuticos, ofreciendo trabajos con una excelente mano de obra y generando confianza y seguridad en nuestros clientes','servicio2.jpg')
+         
+        include components/footer.pug

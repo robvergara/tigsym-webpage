@@ -1,0 +1,74 @@
+.service1-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+}
+.left-content {
+  @include centerContainerMb;
+  padding-left: 15px;
+}
+.left-content h2 {
+  margin-bottom: 20px;
+}
+.left-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  padding-bottom: 20px;
+  @include mobileSectionPhoto;
+}
+
+.service3-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+}
+.left-content {
+  @include centerContainerMb;
+  padding-left: 15px;
+}
+.left-content h2 {
+  margin-bottom: 20px;
+}
+.left-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  @include mobileSectionPhoto;
+}
+
+.service2-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+}
+.right-content {
+  @include centerContainerMb;
+  padding-right: 15px;
+}
+.right-content h2 {
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  @include mobileSectionPhoto;
+}
+
+.service4-container {
+  @include containerBoxMb;
+  @include mobileSectionContent;
+}
+.right-content {
+  @include centerContainerMb;
+  padding-right: 15px;
+}
+.right-content h2 {
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  @include mobileSectionPhoto;
+}

@@ -1,0 +1,20 @@
+/*CONTENEDOR DE LA MISION*/
+.mision-container {
+  @include containerBox;
+  @include borderContainerBottom;
+  @include leftContainer;
+}
+.left-content {
+  @include sideSectionContent;
+  padding-left: 15px;
+}
+.left-content h2 {
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-weight: 300;
+}
+.mision-img {
+  @include sideSectionPhoto;
+}

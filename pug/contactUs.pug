@@ -1,0 +1,28 @@
+extend components/headerContactUs.pug
+block mainContent
+
+        main.main-container
+            section.main-content 
+                h1.main-title TIG SOLDADURAS Y MONTAJES S.A.S 
+                p.main-description Asesoramos y elaboramos para nuestros clientes, montajes de lineas de tuebrias para suministro de producto, agua y vapor, para las maquinas, las cuales son soldadas por medio de soldadura TIG o SMAW segun lo requiera el cliente.
+
+            section.contact-container
+                form.left-content
+                    <label for="nombre">
+                        <input placeholder="Nombre" type="text" name="nombre" id="nombre" autocomplete="name" required>
+                    </label>
+                    <label for="correo">
+                        <input placeholder="Correo" type="email" name="correo" id="correo" autocomplete="email" required>
+                    </label>
+                    <label for="pais">
+                        <input placeholder="País" type="text" name="pais" id="pais" autocomplete="country" required>
+                    </label>
+                    <label for="message">
+                        <textarea id="message" type="text" placeholder="Escríbe tú mensaje"></textarea>
+                    </label>
+                    input#submit(type="submit")
+                </form>
+                .sidePhoto-img 
+                    img(src="../img/imgVision.JPG", alt="")
+
+        include components/footer.pug

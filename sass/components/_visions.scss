@@ -1,0 +1,19 @@
+/*CONTENEDOR DE LA VISION*/
+.vision-container {
+  @include containerBox;
+  @include rightContainer;
+}
+.right-content {
+  @include sideSectionContent;
+  padding-right: 15px;
+}
+.right-content h2 {
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  font-weight: 300;
+}
+.vision-img {
+  @include sideSectionPhoto;
+}

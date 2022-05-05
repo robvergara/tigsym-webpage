@@ -1,0 +1,76 @@
+.service1-container {
+  @include containerBox;
+  @include borderContainerBottom;
+  @include leftContainer;
+}
+.left-content {
+  @include sideSectionContent;
+  padding-left: 15px;
+}
+.left-content h2 {
+  margin-bottom: 20px;
+}
+.left-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  @include sideSectionPhoto;
+}
+
+.service3-container {
+  @include containerBox;
+  @include borderContainerBottom;
+  @include leftContainer;
+}
+.left-content {
+  @include sideSectionContent;
+  padding-left: 15px;
+}
+.left-content h2 {
+  margin-bottom: 20px;
+}
+.left-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  @include sideSectionPhoto;
+}
+
+.service2-container {
+  @include containerBox;
+  @include borderContainerBottom;
+  @include rightContainer;
+}
+.right-content {
+  @include sideSectionContent;
+  padding-right: 15px;
+}
+.right-content h2 {
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  @include sideSectionPhoto;
+}
+
+.service4-container {
+  @include containerBox;
+  @include rightContainer;
+}
+.right-content {
+  @include sideSectionContent;
+  padding-right: 15px;
+}
+.right-content h2 {
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  font-weight: 300;
+}
+.sidePhoto-img {
+  @include sideSectionPhoto;
+}

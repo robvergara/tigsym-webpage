@@ -1,0 +1,37 @@
+/*PIE DE PAGINA*/
+
+.footer-info {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--orange);
+}
+.footer-left {
+  height: 90%;
+  .footer-left-item {
+    margin: 5px auto;
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+}
+
+.footer-right {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  .footer-right-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-right-title {
+    margin: auto;
+    font-size: 1.4rem;
+  }
+  .footer-right-item {
+    margin: auto;
+  }
+}

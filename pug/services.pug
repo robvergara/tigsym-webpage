@@ -1,0 +1,21 @@
+extend components/headerServices.pug
+block mainContent
+
+        main.main-container
+            section.main-content 
+                h1.main-title TIG SOLDADURAS Y MONTAJES S.A.S 
+                p.main-description Asesoramos y elaboramos para nuestros clientes, montajes de lineas de tuebrias para suministro de producto, agua y vapor, para las maquinas, las cuales son soldadas por medio de soldadura TIG o SMAW segun lo requiera el cliente.
+
+            section.service1-container
+                +left-container('Fabricación y montaje de tuberias','Fabricación, reparación y montaje de tuberias de acero carbón, acero inoxidable Sch5 grado alimento y de distintos Sch para agua, vapor, condensado y demas servicios requeridos', 'fabrTuberia.JPG')
+            
+            section.service2-container 
+                +right-container('Fabricación y reparación de tanques','Fabricación y reparación de tanques y tolvas para recopilación y/o almacenamiento productos alimenticios, agua o productos varios','fabrTanques.JPG')
+
+            section.service3-container 
+                +left-container('Fabricacion y reparacion de intercambiadores de calor','Bajo especificaciones, planos y requerimientos del proceso', 'fabrIntercambiador.jpg')
+
+            section.service4-container 
+                +right-container('Carpintería metálica','Fabricacion de plataformas, mezzanines, barandas pasamanos, soportería para sistema de tuberías, tableros distribuidores.','services_3.jpg')
+
+        include components/footer.pug

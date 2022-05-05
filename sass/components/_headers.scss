@@ -1,0 +1,40 @@
+/*HEADER DE LA PAGINA*/
+.header-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  box-shadow: 1px 10px 3px -8px rgba(131, 131, 131, 0.3);
+  z-index: 1;
+}
+.logoHeader_TIG {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+.logoHeader_TIG img {
+  width: 200px;
+  height: 80px;
+  margin: auto 15px;
+}
+.navigation-header {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+.navigation-header__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navigation-header__item {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+.navigation-header__item:hover {
+  cursor: pointer;
+}
