@@ -326,7 +326,7 @@ p {
   font-weight: 300;
 }
 
-.mision-img {
+.sidePhoto-img {
   width: 50%;
   height: 100%;
   -webkit-box-align: center;
@@ -339,7 +339,7 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
-.mision-img img {
+.sidePhoto-img img {
   width: 420px;
   height: 340px;
   -webkit-box-align: center;
@@ -395,7 +395,7 @@ p {
   font-weight: 300;
 }
 
-.vision-img {
+.sidePhoto-img {
   width: 50%;
   height: 100%;
   -webkit-box-align: center;
@@ -408,7 +408,7 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
-.vision-img img {
+.sidePhoto-img img {
   width: 420px;
   height: 340px;
   -webkit-box-align: center;
