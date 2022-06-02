@@ -13,7 +13,8 @@ boton.addEventListener("click",(e)=>{
         resultado.classList.add("red")
     } else{
         resultado.innerHTML = "Solicitud enviada correctamente";
-        resultado.classList.add("green")
+        resultado.classList.add("green");
+        resultado.classList.remove("red");
     }
 })
 
