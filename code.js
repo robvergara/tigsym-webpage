@@ -29,5 +29,6 @@ const validarCampos = ()=>{
         error[1] = "El correo es inválido";
         return error;
     }
+    error[0] = false;
     return 0;
 }
