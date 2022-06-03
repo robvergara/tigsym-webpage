@@ -8,6 +8,8 @@
 
 /*CONTENEDOR DE PRESENTACION BREVE*/
 .presentation-container {
+  min-width: 900px;
+  max-width: 1024px;
   @include containerBox;
   @include centerContainer;
   @include borderContainerBottom;

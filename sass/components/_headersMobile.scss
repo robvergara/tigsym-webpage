@@ -1,47 +1,66 @@
 /*HEADER DE LA PAGINA*/
 .header-container {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
+  height: 100vh;
   background-color: white;
   box-shadow: 1px 10px 3px -8px rgba(131, 131, 131, 0.3);
-  transition: all 0.4s ease;
-  transform: translateX(100%);
+}
+
+.navigation-header {
+ height: 100px;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 .logoHeader_TIG {
-  width: 200px;
-  height: 80px;
-  display: flex;
+  width: 140px;
+  margin-left: 20px;
 }
 .logoHeader_TIG img {
   width: 100%;
   height: 100%;
 }
-.navigation-header {
-  width: 200px;
-  height: 60%;
-  margin: 20px auto;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  left: 100%;
-  transform: translateX(0);
+.bar-btn{
+  font-size: 25px;
+  color: gray;
+  margin-right: 20px;
+  cursor: pointer;
 }
 .navigation-header__list {
+  position: fixed;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 0hv;
+  top: 100px;
+  text-align: center;
+  background-color: whitesmoke;
+  transition: all .5s;
 }
 .navigation-header__item {
-  display: flex;
-  justify-content: center;
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s;
+}
+
+.navigation-header__item a{
+  color: var(--orange);
   font-size: 2.4rem;
   font-weight: 300;
 }
-.navigation-header__item:hover {
-  cursor: pointer;
+.navigation-header__item a:hover {
+  color: orangered;
+  font-weight: 600;
+  transition: .3s;
 }
+#check{
+  display: none;
+}
+#check:checked ~ .navigation-header__list{
+  height: 100vh;
+}
+
+#check:checked ~ .navigation-header__item {
+  display: block;
+}
+

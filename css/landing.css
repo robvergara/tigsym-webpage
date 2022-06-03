@@ -89,6 +89,8 @@
 
 /*CONTENEDOR DE PRESENTACION BREVE*/
 .presentation-container {
+  min-width: 900px;
+  max-width: 1024px;
   width: 100%;
   height: 500px;
   display: -webkit-box;

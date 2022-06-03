@@ -40,43 +40,35 @@ p {
   font-size: 2.4rem;
 }
 
-/*TAMAÑO DE LOS CONTAINERS*/
-/*CONTAINERS CON CONTENIDO HACIA LOS LADOS*/
-/**/
-/*FIT DEL CONTENIDO ESCRITO */
-/*FIT DEL CONTENIDO DE IMAGENES*/
-/*CONTAINER CON CONTENIDO EN EL CENTRO*/
-/**/
 /*TAMAÑO CONTAINERS MOBILE*/
 /*FIT DEL CONTENIDO MOBILE CON IMAGENES*/
 /*FIT CONTENIDO CENTRAL SIN IMAGENES*/
 /*HEADER DE LA PAGINA*/
 .header-container {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
+  height: 100vh;
   background-color: white;
   -webkit-box-shadow: 1px 10px 3px -8px rgba(131, 131, 131, 0.3);
           box-shadow: 1px 10px 3px -8px rgba(131, 131, 131, 0.3);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 
-.logoHeader_TIG {
-  width: 200px;
-  height: 80px;
+.navigation-header {
+  height: 100px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logoHeader_TIG {
+  width: 140px;
+  margin-left: 20px;
 }
 
 .logoHeader_TIG img {
@@ -84,50 +76,55 @@ p {
   height: 100%;
 }
 
-.navigation-header {
-  width: 200px;
-  height: 60%;
-  margin: 20px auto;
-  padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  left: 100%;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.bar-btn {
+  font-size: 25px;
+  color: gray;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 .navigation-header__list {
+  position: fixed;
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 0hv;
+  top: 100px;
+  text-align: center;
+  background-color: whitesmoke;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navigation-header__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navigation-header__item a {
+  color: var(--orange);
   font-size: 2.4rem;
   font-weight: 300;
 }
 
-.navigation-header__item:hover {
-  cursor: pointer;
+.navigation-header__item a:hover {
+  color: orangered;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .navigation-header__list {
+  height: 100vh;
+}
+
+#check:checked ~ .navigation-header__item {
+  display: block;
 }
 
 /*CONTENEDOR PRINCIPAL*/
@@ -145,7 +142,6 @@ p {
   background-repeat: no-repeat;
   width: 100%;
   min-width: 320px;
-  max-width: 900px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,7 +210,6 @@ p {
   padding: 0 50px;
   width: 100%;
   min-width: 320px;
-  max-width: 900px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,7 +332,6 @@ p {
 .mision-container {
   width: 100%;
   min-width: 320px;
-  max-width: 900px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,6 +393,7 @@ p {
 .mision-img {
   padding-bottom: 20px;
   width: 50%;
+  min-width: 250px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,7 +422,6 @@ p {
 .vision-container {
   width: 100%;
   min-width: 320px;
-  max-width: 900px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,6 +482,7 @@ p {
 .vision-img {
   padding-bottom: 20px;
   width: 50%;
+  min-width: 250px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,7 +511,6 @@ p {
 .mision-container {
   width: 100%;
   min-width: 320px;
-  max-width: 900px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,6 +572,7 @@ p {
 .sidePhoto-img {
   padding-bottom: 20px;
   width: 50%;
+  min-width: 250px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,7 +601,6 @@ p {
 .vision-container {
   width: 100%;
   min-width: 320px;
-  max-width: 900px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,6 +661,7 @@ p {
 .sidePhoto-img {
   padding-bottom: 20px;
   width: 50%;
+  min-width: 250px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
