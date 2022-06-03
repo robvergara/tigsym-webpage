@@ -1,60 +1,16 @@
 /*CONTENEDOR PRINCIPAL*/
-.main-container {
-  display: inline-block;
-}
+
 /*CONTENEDOR HOME DE LA PAGINA*/
 .main-content {
-  color: whitesmoke;
-  background-image: linear-gradient(
-      rgb(255, 163, 102, 0.3),
-      rgb(255, 163, 102, 0.3)
-    ),
-    url("../img/contactenos-img.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   @include containerBox;
   @include centerContainer;
-}
-.main-title {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  font-size: 5rem;
-}
-.main-description {
-  margin-bottom: 30px;
-  margin-left: 15px;
-  font-weight: 100;
-  width: 60%;
-}
-.viewMore-button {
-  background-color: var(--orange);
-  border-radius: 28px;
-  border: 1px solid --orange;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 1.8rem;
-  padding: 8px 15px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px --orange;
-}
-.viewMore-button:hover {
-  opacity: 0.8;
-  transition-duration: 0.3s;
 }
 
 /*CONTENEDOR DE PRESENTACION BREVE*/
 .presentation-container {
-  padding: 0 50px;
   @include containerBox;
   @include centerContainer;
   @include borderContainerBottom;
-}
-.presentation-container p {
-  font-weight: 200;
 }
 
 /*CONTENEDOR DE LOS SERVICIOS*/
